@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ListaComponent } from './lista/lista.component';
+import { FormularioComponent } from './lista/formulario/formulario.component';
+import { ItemComponent } from './lista/item/item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaComponent,
+    FormularioComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +21,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ListaComponent]
 })
 export class AppModule { }
