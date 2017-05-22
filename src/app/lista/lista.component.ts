@@ -16,8 +16,12 @@ export class ListaComponent implements OnInit {
   		this.lista.push(new Producto('Arroz'));
   }
 
+  agregar(data: Producto) {
+    this.lista.unshift(data);
+  }
+
   ngOnInit() {
-  	console.log(this.lista);
+
   }
 
 }
